@@ -12,8 +12,21 @@ n -> 1-
 sum = 1+2+3+...+10 = 55 */
 
 #include <stdio.h>
-int main() {
-  
+int main() 
+{
+  //variables
+  int n ;
+  float tot ;
+
+  //user input 
+  printf ( "Up to which number you want to calculate : " );
+  scanf( "%d" , &n ) ;
+
+  //calculation
+  tot = (n/2.0) * (2 + (n-1) ) ;
+
+  printf( "The total is : %.2f " , tot ) ;
+
   return 0;
 }
 
